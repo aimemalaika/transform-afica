@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --dark-color: #272a31;
+  --orange-color: #ec5242;
+  --white-smoke: #d3d3d3;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.open-menu,
+.close-menu {
+    background-color: transparent;
+    border: none;
+    font-size: 3em;
+}
+
+.open-menu {
+  color: var(--dark-color);
+  padding-left: 30px;
+}
+
+.close-menu {
+  color: var(--white-smoke);
+  align-self: end;
+  padding-right: 30px;
+  padding-top: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--dark-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  left: -100%;
+}
+
+.mobile-nav ul li {
+  padding: 25px 30px;
+}
+
+.mobile-nav ul li a{
+  color: var(--white-smoke);
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.bordered-link a{
+  border: 3px solid;
+  border-color: var(--orange-color);
+  padding: 15px;
+  color: var(--orange-color) !important;
+}
+
+.animate-left {
+  animation: slide-left 1s ease forwards;
+  left: -100%;
+}
+
+.animate-right {
+  animation: slide-right 1s ease forwards;
+  left: 0;
+}
+
+@keyframes slide-right {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
