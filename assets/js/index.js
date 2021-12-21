@@ -70,4 +70,112 @@ mainPrograms.forEach((program) => {
   `;
 });
 
-// document.querySelector('#main-program-grid').innerHTML += '';
+const speackerList = [
+  {
+    name: 'Aime Malaika',
+    postion: 'Artificial Intelligence Engeneer',
+    image: 'aimemalaika.jpg',
+    description: 'Aime Malaika common-bases peer production and published his seminal book the Wealth of network 2016',
+  },
+  {
+    name: 'Aime Malaika',
+    postion: 'Artificial Intelligence Engeneer',
+    image: 'aimemalaika.jpg',
+    description: 'Aime Malaika common-bases peer production and published his seminal book the Wealth of network 2016',
+  },
+  {
+    name: 'Aime Malaika',
+    postion: 'Artificial Intelligence Engeneer',
+    image: 'aimemalaika.jpg',
+    description: 'Aime Malaika common-bases peer production and published his seminal book the Wealth of network 2016',
+  },
+  {
+    name: 'Aime Malaika',
+    postion: 'Artificial Intelligence Engeneer',
+    image: 'aimemalaika.jpg',
+    description: 'Aime Malaika common-bases peer production and published his seminal book the Wealth of network 2016',
+  },
+  {
+    name: 'Aime Malaika',
+    postion: 'Artificial Intelligence Engeneer',
+    image: 'aimemalaika.jpg',
+    description: 'Aime Malaika common-bases peer production and published his seminal book the Wealth of network 2016',
+  },
+  {
+    name: 'Aime Malaika',
+    postion: 'Artificial Intelligence Engeneer',
+    image: 'aimemalaika.jpg',
+    description: 'Aime Malaika common-bases peer production and published his seminal book the Wealth of network 2016',
+  },
+  {
+    name: 'Aime Malaika',
+    postion: 'Artificial Intelligence Engeneer',
+    image: 'aimemalaika.jpg',
+    description: 'Aime Malaika common-bases peer production and published his seminal book the Wealth of network 2016',
+  },
+  {
+    name: 'Aime Malaika',
+    postion: 'Artificial Intelligence Engeneer',
+    image: 'aimemalaika.jpg',
+    description: 'Aime Malaika common-bases peer production and published his seminal book the Wealth of network 2016',
+  },
+  {
+    name: 'Aime Malaika',
+    postion: 'Artificial Intelligence Engeneer',
+    image: 'aimemalaika.jpg',
+    description: 'Aime Malaika common-bases peer production and published his seminal book the Wealth of network 2016',
+  },
+  {
+    name: 'Aime Malaika',
+    postion: 'Artificial Intelligence Engeneer',
+    image: 'aimemalaika.jpg',
+    description: 'Aime Malaika common-bases peer production and published his seminal book the Wealth of network 2016',
+  },
+  {
+    name: 'Aime Malaika',
+    postion: 'Artificial Intelligence Engeneer',
+    image: 'aimemalaika.jpg',
+    description: 'Aime Malaika common-bases peer production and published his seminal book the Wealth of network 2016',
+  },
+  {
+    name: 'Aime Malaika',
+    postion: 'Artificial Intelligence Engeneer',
+    image: 'aimemalaika.jpg',
+    description: 'Aime Malaika common-bases peer production and published his seminal book the Wealth of network 2016',
+  },
+];
+
+const expendSpeacker = (start, end) => {
+  if (start === 0) {
+    document.querySelector('#speakers-list').innerHTML = '';
+  }
+  for (let i = start; i < end; i += 1) {
+    document.querySelector('#speakers-list').innerHTML += `
+      <li class="speaker-item">
+        <div class="avatar">
+          <img src="./assets/images/${speackerList[i].image}" alt="">
+        </div>
+        <div class="biography">
+          <h3 class="names">${speackerList[i].name}</h3>
+          <p class="job-title">${speackerList[i].postion}</p>
+          <hr class="speakers-info-separator">
+          <p class="experience">${speackerList[i].description}</p>
+        </div>
+      </li>
+    `;
+  }
+};
+
+expendSpeacker(0, 4);
+
+document.querySelector('.more-spackers').addEventListener('click', (e) => {
+  if (!e.target.classList.contains('expended')) {
+    e.target.classList.add('expended');
+    expendSpeacker(7, speackerList.length);
+    e.target.innerHTML = 'Less <i class="fa fa-angle-up"></i>';
+  } else {
+    e.target.innerHTML = 'More <i class="fa fa-angle-down"></i>';
+    e.target.classList.remove('expended');
+    expendSpeacker(0, 4);
+  }
+});

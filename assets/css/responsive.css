@@ -107,6 +107,7 @@
 
   .main-program-grid {
     flex-direction: row;
+    flex-wrap: wrap;
     width: 80%;
     margin: auto;
   }
