@@ -211,7 +211,8 @@ ul {
 }
 
 .contact-message {
-  margin-top: 40px;
+  width: 50%;
+  margin: auto;
 }
 
 .date-main {
@@ -447,4 +448,8 @@ ul {
 
 .text-center {
   text-align: center;
+}
+
+.desktop-angle {
+  display: none;
 }
