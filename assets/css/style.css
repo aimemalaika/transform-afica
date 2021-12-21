@@ -388,10 +388,11 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  padding: 45px 24px;
+  padding: 45px 45px;
 }
 
 .footer-copy-right p {
   font-size: 16px;
   line-height: 25px;
+  margin: 0;
 }
