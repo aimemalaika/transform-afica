@@ -104,4 +104,42 @@
   .date-main {
     font-size: 3em;
   }
+
+  .main-program-grid {
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+
+  .program-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 2px;
+  }
+
+  .program-icon {
+    display: block;
+    text-align: center;
+  }
+
+  .program-icon img {
+    width: 30%;
+    margin: auto;
+  }
+
+  .program-title h3 {
+    text-align: center;
+  }
+
+  .program-description p {
+    text-align: center;
+  }
+
+  .join-button {
+    background-color: transparent;
+    margin-top: 40px;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
 }
