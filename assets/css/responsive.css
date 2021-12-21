@@ -143,4 +143,26 @@
     text-decoration: underline;
     text-transform: uppercase;
   }
+
+  .speakers-list-items {
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .avatar {
+    background-image: url(../images/case-speaker-gray.png);
+  }
+
+  .more-spackers {
+    display: none;
+  }
+
+  .speaker-item .biography {
+    padding-top: 12px;
+  }
+
+  .speaker-item .job-title {
+    margin: 16px 0;
+  }
 }

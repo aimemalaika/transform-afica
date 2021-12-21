@@ -165,8 +165,11 @@ const expendSpeacker = (start, end) => {
     `;
   }
 };
-
-expendSpeacker(0, 4);
+if (window.screen.width < 768) {
+  expendSpeacker(0, 4);
+} else {
+  expendSpeacker(0, speackerList.length);
+}
 
 document.querySelector('.more-spackers').addEventListener('click', (e) => {
   if (!e.target.classList.contains('expended')) {
@@ -177,5 +180,13 @@ document.querySelector('.more-spackers').addEventListener('click', (e) => {
     e.target.innerHTML = 'More <i class="fa fa-angle-down"></i>';
     e.target.classList.remove('expended');
     expendSpeacker(0, 4);
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.screen.width < 768) {
+    expendSpeacker(0, 4);
+  } else {
+    expendSpeacker(0, speackerList.length);
   }
 });
