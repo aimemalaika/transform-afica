@@ -163,7 +163,8 @@ ul {
   background-image: url(../images/did-min-2.jpg);
   background-size: contain;
   background-position: center;
-  font-size: 5em;
+  font-size: 3.9em;
+  font-weight: 900;
   text-align: left;
   width: 100%;
   margin: 0;
@@ -192,4 +193,78 @@ ul {
 
 .white-bg {
   background-color: var(--white-color);
+}
+
+.main-program {
+  background-image: url(../images/angle-puls.png), linear-gradient(0deg, var(--dark-color) 50%, var(--dark-color) 50%);
+  background-repeat: repeat;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-titles {
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+  color: var(--white-smoke);
+}
+
+.section-title-separators {
+  border: 1px solid var(--orange-color);
+  width: 48px;
+  margin-bottom: 48px;
+}
+
+.main-program-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 24px;
+}
+
+.program-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  padding: 20px 10px;
+  background-color: #d3d3d31e;
+  margin-bottom: 25px;
+  grid-gap: 1rem;
+}
+
+.program-title,
+.program-description {
+  display: table;
+}
+
+.program-icon {
+  display: grid;
+  align-items: center;
+}
+
+.program-icon img {
+  width: 100%;
+}
+
+.program-title h3 {
+  color: var(--orange-color);
+  font-size: 1.4em;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.program-description p {
+  color: var(--white-smoke);
+  font-size: 15px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.join-button {
+  width: 70%;
+  align-self: center;
+  background-color: var(--orange-color);
+  color: var(--white-smoke);
+  padding: 20px;
+  font-size: 16px;
 }
