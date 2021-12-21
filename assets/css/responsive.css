@@ -96,9 +96,29 @@
     width: 75%;
   }
 
+  .main-section-about {
+    height: 60vh;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+  }
+
+  .main-section-about .title-intro {
+    display: none;
+  }
+
+  .title-info-about {
+    width: 60%;
+    margin: auto;
+    color: var(--orange-color);
+  }
+
   .card-explanatory {
     padding: 15px 20px;
     width: 60%;
+  }
+
+  .card-explanatory-about {
+    margin: 40px auto;
   }
 
   .date-main {
@@ -184,5 +204,11 @@
   .footer-copy-right p:last-child {
     margin-top: 12px;
     display: block;
+  }
+
+  .desktop-angle {
+    display: block;
+    padding-left: 5px;
+    font-weight: 800;
   }
 }
