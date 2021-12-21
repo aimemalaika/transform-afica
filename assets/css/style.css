@@ -27,6 +27,14 @@ a {
   text-decoration: none;
 }
 
+.page-header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  background-color: transparent;
+}
+
 .open-menu,
 .close-menu {
   background-color: transparent;
@@ -36,7 +44,9 @@ a {
 
 .open-menu {
   color: var(--dark-color);
-  padding-left: 30px;
+  padding-top: 8px;
+  padding-left: 35px;
+  padding-bottom: 8px;
 }
 
 .close-menu {
@@ -80,6 +90,10 @@ ul {
   font-size: 2em;
 }
 
+.mobile-nav ul li a:hover {
+  color: var(--orange-color);
+}
+
 .animate-left {
   animation: slide-left 1s ease forwards;
   left: -100%;
@@ -112,4 +126,70 @@ ul {
 
 .desktop-navigation-block {
   display: none;
+}
+
+.main-section {
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+}
+
+.layer-color {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 15vh;
+  padding-bottom: 2vh;
+  background: var(--transparent-white);
+}
+
+.main-section-container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.title-intro {
+  color: var(--orange-color);
+  font-size: 2.5em;
+  font-weight: 300;
+  text-align: left;
+  margin: 0;
+}
+
+.title-info {
+  background-image: url(../images/did-min-2.jpg);
+  background-size: contain;
+  background-position: center;
+  font-size: 5em;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-explanatory {
+  border: 3px solid;
+  border-color: var(--white-color);
+  padding: 10px 20px;
+  color: var(--dark-color);
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+.date-main {
+  font-size: 2em;
+  color: var(--dark-color);
+}
+
+.main-cpy-right {
+  font-size: 1.5em;
+}
+
+.white-bg {
+  background-color: var(--white-color);
 }

@@ -1,16 +1,28 @@
 @media screen and (max-width: 984px) {
+  .logo img {
+    width: 55%;
+  }
+
   .desktop-nav ul li {
     padding: 20px 15px;
   }
 }
 
 @media screen and (min-width: 985px) {
+  .logo img {
+    width: 40%;
+  }
+
   .desktop-nav ul li {
     padding: 20px 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .page-header {
+    position: relative;
+  }
+
   .mobile-navigaion-block {
     display: none;
   }
@@ -63,10 +75,6 @@
     width: 10%;
   }
 
-  .logo img {
-    width: 40%;
-  }
-
   .desktop-nav {
     width: 90%;
   }
@@ -83,70 +91,17 @@
     color: var(--orange-color);
   }
 
-  .main-section {
-    background-image: url(../images/banner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-  }
-
-  .main-section::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background: var(--transparent-white);
-  }
-
-  .main-section-container {
-    width: 80%;
-    margin: auto;
-    padding-top: 15vh;
-    position: relative;
-  }
-
-  .title-intro {
-    color: var(--orange-color);
-    font-size: 2em;
-    font-weight: 400;
-    text-align: left;
-    margin: 0;
-  }
-
   .title-info {
-    background-image: url(../images/did-min-2.jpg);
-    background-size: contain;
-    background-position: center;
     font-size: 6em;
-    text-align: left;
     width: 75%;
-    margin: 0;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .card-explanatory {
-    border: 3px solid;
-    border-color: var(--white-color);
     padding: 15px 20px;
-    color: var(--dark-color);
-    font-size: 15px;
-    line-height: 28px;
     width: 60%;
-    margin-top: 20px;
   }
 
   .date-main {
     font-size: 3em;
-    color: var(--dark-color);
-  }
-
-  .main-cpy-right {
-    font-size: 1.5em;
   }
 }
