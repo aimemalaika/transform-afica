@@ -190,3 +190,48 @@ window.addEventListener('resize', () => {
     expendSpeacker(0, speackerList.length);
   }
 });
+
+const partnersList = [
+  {
+    logo: 'sponsor-1.png',
+    link: 'https://www.microsoft.com/en-us/',
+  },
+  {
+    logo: 'sponsor-2.png',
+    link: 'https://www.intel.com/content/www/us/en/homepage.html',
+  },
+  {
+    logo: 'sponsor-3.png',
+    link: 'https://www.google.com/',
+  },
+  {
+    logo: 'sponsor-4.png',
+    link: 'https://aims.ac.rw/',
+  },
+  {
+    logo: 'sponsor-5.png',
+    link: 'https://www.unesco.org/en',
+  },
+  {
+    logo: 'sponsor-6.png',
+    link: 'https://www.rwandair.com/',
+  },
+  {
+    logo: 'sponsor-7.png',
+    link: 'https://www.mtn.co.rw/',
+  },
+  {
+    logo: 'sponsor-8.png',
+    link: 'https://www.ibm.com/us-en/',
+  },
+];
+
+partnersList.forEach((partner) => {
+  document.querySelector('.partners-list-items').innerHTML += `
+    <li class="partners-items">
+      <a target="blanc" href="${partner.link}">
+        <img src="./assets/images/${partner.logo}" alt="" />
+      </a>
+    </li>
+  `;
+});
