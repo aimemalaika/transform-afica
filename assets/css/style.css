@@ -16,9 +16,9 @@ button {
 
 .open-menu,
 .close-menu {
-    background-color: transparent;
-    border: none;
-    font-size: 3em;
+  background-color: transparent;
+  border: none;
+  font-size: 3em;
 }
 
 .open-menu {
@@ -41,7 +41,6 @@ ul {
 .mobile-nav {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
   z-index: 100;
   background-color: var(--dark-color);
@@ -56,17 +55,17 @@ ul {
   padding: 25px 30px;
 }
 
-.mobile-nav ul li a{
-  color: var(--white-smoke);
-  text-decoration: none;
-  font-size: 2em;
-}
-
-.bordered-link a{
+.bordered-link a {
   border: 3px solid;
   border-color: var(--orange-color);
   padding: 15px;
-  color: var(--orange-color) !important;
+  color: var(--orange-color);
+}
+
+.mobile-nav ul li a {
+  color: var(--white-smoke);
+  text-decoration: none;
+  font-size: 2em;
 }
 
 .animate-left {
