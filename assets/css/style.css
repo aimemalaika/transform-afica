@@ -376,6 +376,23 @@ ul {
   filter: grayscale(100%);
 }
 
+.full-log img {
+  width: 50%;
+}
+
 .partners-items img:hover {
   filter: grayscale(0);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 45px 45px;
+}
+
+.footer-copy-right p {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 0;
 }
