@@ -204,14 +204,14 @@ ul {
 }
 
 .card-explanatory-about {
-  margin-top: 40px;
+  margin: 40px auto;
   border: 1px solid;
   background-color: var(--white-color);
   border-color: var(--white-smoke);
 }
 
 .contact-message {
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 
@@ -387,7 +387,7 @@ ul {
 }
 
 .partners-list {
-  padding-top: 15vh;
+  padding-top: 10vh;
   padding-bottom: 5vh;
   background-color: var(--dark-color);
 }
@@ -452,4 +452,33 @@ ul {
 
 .desktop-angle {
   display: none;
+}
+
+.about-event {
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  background-color: var(--white-color);
+}
+
+.about-event .section-titles {
+  color: var(--dark-color);
+  font-size: 2em;
+}
+
+.about-event .about-description {
+  padding: 0 24px;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0;
+}
+
+.save-the-date {
+  border: 1px solid;
+  margin: 30px 24px 5px 24px;
+  border-color: var(--white-smoke);
+}
+
+.save-the-date img {
+  width: 50%;
+  margin: 5% 25%;
 }
