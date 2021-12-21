@@ -376,8 +376,14 @@ ul {
   filter: grayscale(100%);
 }
 
+.full-log {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
 .full-log img {
-  width: 50%;
+  width: 100%;
 }
 
 .partners-items img:hover {
@@ -391,8 +397,18 @@ ul {
   padding: 45px 45px;
 }
 
+.footer-copy-right {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
 .footer-copy-right p {
   font-size: 16px;
   line-height: 25px;
   margin: 0;
+}
+
+.footer-copy-right p:last-child {
+  display: none;
 }
