@@ -419,6 +419,11 @@ ul {
   width: 100%;
 }
 
+.save-the-date img {
+  width: 50%;
+  margin: 5% 25%;
+}
+
 .partners-items img:hover {
   filter: grayscale(0);
 }
@@ -476,9 +481,4 @@ ul {
   border: 1px solid;
   margin: 30px 24px 5px 24px;
   border-color: var(--white-smoke);
-}
-
-.save-the-date img {
-  width: 50%;
-  margin: 5% 25%;
 }
