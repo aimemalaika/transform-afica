@@ -352,3 +352,26 @@ ul {
   color: var(--orange-color);
   font-weight: 600;
 }
+
+.partners-list {
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+  background-color: var(--dark-color);
+}
+
+.partners-list-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partners-items {
+  width: 30%;
+  margin: 20px 0;
+}
+
+.partners-items img {
+  width: 100%;
+  filter: grayscale(100%);
+}
