@@ -302,7 +302,7 @@ ul {
 
 .avatar {
   background-image: url(../images/case-speaker-bg.png);
-  background-size: 60% 60%;
+  background-size: 60%;
   background-repeat: no-repeat;
 }
 
@@ -374,4 +374,8 @@ ul {
 .partners-items img {
   width: 100%;
   filter: grayscale(100%);
+}
+
+.partners-items img:hover {
+  filter: grayscale(0);
 }
