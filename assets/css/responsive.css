@@ -165,4 +165,13 @@
   .speaker-item .job-title {
     margin: 16px 0;
   }
+
+  .partners-list-items {
+    width: 80%;
+    margin: auto;
+  }
+
+  .partners-items {
+    margin: 30px 0;
+  }
 }
