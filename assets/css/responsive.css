@@ -18,7 +18,6 @@
   .desktop-navigation-block {
     display: block;
     background-color: var(--white-color);
-    padding-top: 10px;
     padding-bottom: 10px;
   }
 
@@ -28,6 +27,36 @@
     justify-content: space-between;
     flex-direction: row;
     margin: auto;
+    padding-top: 10px;
+  }
+
+  .top-bar {
+    background-color: var(--dark-color);
+    padding: 10px;
+  }
+
+  .top-bar ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  .top-bar ul li a {
+    padding-right: 25px;
+    color: var(--white-color);
+  }
+
+  .desktop-nav ul li a {
+    font-size: 16px;
+    color: var(--dark-color);
+    text-transform: capitalize;
+  }
+
+  .top-bar ul li a:hover {
+    padding-right: 25px;
+    color: var(--orange-color);
   }
 
   .logo {
@@ -50,13 +79,74 @@
     margin: 0;
   }
 
-  .desktop-nav ul li a {
-    font-size: 16px;
-    color: var(--dark-color);
-    text-transform: capitalize;
-  }
-
   .desktop-nav ul li a:hover {
     color: var(--orange-color);
+  }
+
+  .main-section {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+  }
+
+  .main-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: var(--transparent-white);
+  }
+
+  .main-section-container {
+    width: 80%;
+    margin: auto;
+    padding-top: 15vh;
+    position: relative;
+  }
+
+  .title-intro {
+    color: var(--orange-color);
+    font-size: 2em;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+  }
+
+  .title-info {
+    background-image: url(../images/did-min-2.jpg);
+    background-size: contain;
+    background-position: center;
+    font-size: 6em;
+    text-align: left;
+    width: 75%;
+    margin: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card-explanatory {
+    border: 3px solid;
+    border-color: var(--white-color);
+    padding: 15px 20px;
+    color: var(--dark-color);
+    font-size: 15px;
+    line-height: 28px;
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  .date-main {
+    font-size: 3em;
+    color: var(--dark-color);
+  }
+
+  .main-cpy-right {
+    font-size: 1.5em;
   }
 }
