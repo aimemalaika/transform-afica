@@ -174,4 +174,15 @@
   .partners-items {
     margin: 30px 0;
   }
+
+  .footer {
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .footer-copy-right p:last-child {
+    margin-top: 12px;
+    display: block;
+  }
 }
