@@ -165,6 +165,7 @@ const expendSpeacker = (start, end) => {
     `;
   }
 };
+
 if (window.screen.width < 768) {
   expendSpeacker(0, 4);
 } else {
@@ -174,7 +175,7 @@ if (window.screen.width < 768) {
 document.querySelector('.more-spackers').addEventListener('click', (e) => {
   if (!e.target.classList.contains('expended')) {
     e.target.classList.add('expended');
-    expendSpeacker(7, speackerList.length);
+    expendSpeacker(5, speackerList.length);
     e.target.innerHTML = 'Less <i class="fa fa-angle-up"></i>';
   } else {
     e.target.innerHTML = 'More <i class="fa fa-angle-down"></i>';
