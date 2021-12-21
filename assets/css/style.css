@@ -218,8 +218,8 @@ ul {
 }
 
 .main-program-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   padding: 0 24px;
 }
 
@@ -230,6 +230,10 @@ ul {
   background-color: #d3d3d31e;
   margin-bottom: 25px;
   grid-gap: 1rem;
+}
+
+.program-item:hover {
+  outline: 2px solid var(--white-smoke);
 }
 
 .program-title,
@@ -251,6 +255,7 @@ ul {
   font-size: 1.4em;
   display: table-cell;
   vertical-align: middle;
+  line-height: 25px;
 }
 
 .program-description p {
@@ -258,6 +263,7 @@ ul {
   font-size: 15px;
   display: table-cell;
   vertical-align: middle;
+  line-height: 25px;
 }
 
 .join-button {
@@ -267,4 +273,5 @@ ul {
   color: var(--white-smoke);
   padding: 20px;
   font-size: 16px;
+  text-align: center;
 }
