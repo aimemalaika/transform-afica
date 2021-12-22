@@ -198,10 +198,18 @@
     margin: 30px 0;
   }
 
+  footer {
+    background-color: var(--dark-color);
+  }
+
   .footer {
     width: 80%;
     margin: auto;
     grid-template-columns: 1fr 2fr;
+  }
+
+  .footer-copy-right {
+    color: var(--white-color);
   }
 
   .footer-copy-right p:last-child {
