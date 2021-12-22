@@ -530,3 +530,7 @@ ul {
   align-content: center;
   text-align: center;
 }
+
+.active {
+  color: var(--orange-color) !important;
+}
