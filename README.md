@@ -16,6 +16,8 @@
 
 ### [LIVE DEMO LINK](https://aimemalaika.github.io/transform-afica/)
 
+### [VIDEO DESCRIPTION](https://www.loom.com/share/bde04dcedcc1427c95608a6a2361876b)
+
 
 ## Getting Started
 - clone the repository by running\
