@@ -226,4 +226,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .event-list-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 70%;
+    margin: auto;
+  }
 }

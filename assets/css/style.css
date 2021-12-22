@@ -449,6 +449,7 @@ ul {
 
 .list-past-event p {
   font-size: 16px;
+  text-align: center;
 }
 
 .footer-copy-right p:last-child {
@@ -519,10 +520,11 @@ ul {
   background-repeat: no-repeat;
   height: 250px;
   margin-bottom: 20px;
+  background-position: center center;
 }
 
 .top-gb {
-  background-color: #ec5342d8;
+  background-color: #ec5342d6;
   height: 100%;
   display: grid;
   align-content: center;
